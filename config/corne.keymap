@@ -58,30 +58,6 @@
 };
 
 / {
-  combos {
-    compatible = "zmk,combos";
-
-    combo_clr {
-        timeout-ms = <50>;
-        key-positions = <2 3 6>;
-        bindings = <&bt BT_CLR>;
-    };
-
-    combo_out {
-        timeout-ms = <50>;
-        key-positions = <2 3 7>;
-        bindings = <&out OUT_TOG>;
-    };
-
-    combo_game {
-        timeout-ms = <50>;
-        key-positions = <2 3 8>;
-        bindings = <&tog 2>;
-    };
-  };
-};
-
-/ {
   keymap {
     compatible = "zmk,keymap";
 
@@ -102,16 +78,6 @@
         &kp APOS &kp N4 &kp N5 &kp N6 &kp LPAR &kp LBKT &kp LEFT &kp DOWN &kp RIGHT &kp MINUS
         &kp N0 &olmt LALT N1 &olmt LCMD N2 &lmt LCTRL N3 &kp RPAR &kp RBKT &rmt RCTRL EQUAL &trans &trans &trans
         &trans &trans &trans &trans &trans &trans
-      >;
-    };
-
-    game_layer {
-      label = "GAME";
-      bindings = <
-        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-        &trans &kp X &kp C &kp D &trans &trans &kp H &kp COMMA &kp DOT &trans
-        &kp ESC &trans &trans &trans &kp SPACE &trans
       >;
     };
   };
