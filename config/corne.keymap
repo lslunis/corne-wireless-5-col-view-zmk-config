@@ -16,10 +16,25 @@
 / {
   combos {
     compatible = "zmk,combos";
+
+    combo_sel_0 {
+      key-positions = <2 3 6>;
+      bindings = <&bt BT_SEL 0>;
+    };
+
+    combo_sel_1 {
+      key-positions = <2 3 7>;
+      bindings = <&bt BT_SEL 1>;
+    };
+
+    combo_clr {
+      key-positions = <2 3 8>;
+      bindings = <&bt BT_CLR>;
+    };
+
     combo_raise {
-        timeout-ms = <50>;
-        key-positions = <30 34>;
-        bindings = <&tog 1>;
+      key-positions = <30 34>;
+      bindings = <&tog 1>;
     };
   };
 };
