@@ -28,7 +28,7 @@
     };
 
     combo_clr {
-      key-positions = <2 3 8>;
+      key-positions = <2 3 9>;
       bindings = <&bt BT_CLR>;
     };
 
